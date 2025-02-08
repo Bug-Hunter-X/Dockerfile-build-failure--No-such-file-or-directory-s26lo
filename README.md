@@ -1,0 +1,1 @@
+This repository demonstrates a common error in Dockerfiles: attempting to copy and run a file that doesn't exist yet.  The original Dockerfile fails because the `app.py` file is not present in the image before the `COPY` and `CMD` instructions. The solution demonstrates the correct approach, ensuring the necessary file is created before subsequent steps.
